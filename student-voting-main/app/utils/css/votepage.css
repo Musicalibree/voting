@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  padding-top: 2rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+form {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.position {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.position.done {
+  transform: translateX(-100%);
+}
+
+.position.next {
+  transform: translateX(100%);
+}
+
+.nav-buttons {
+  position: absolute;
+  display: flex;
+  bottom: 8rem;
+  gap: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-button {
+  display: none;
+  width: 100%
+}
+
+.nav-button.active {
+  display: flex;
+}
+
+#submit {
+  display: none;
+  position: absolute;
+  bottom: 8rem;
+  left: 55%;
+  
+}
+
+#submit.active {
+  display: flex;
+}
+.candi {
+  display: flex;
+  width: 300px;
+  gap: 5px;
+}
